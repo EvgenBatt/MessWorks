@@ -7,13 +7,268 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Syne:wght@800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lilita+One:wght@400&family=Montserrat:wght@300;400;600&family=Syne:wght@800&display=swap"
       rel="stylesheet" />
-    
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.min.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/common.css" />
-    <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/index.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-flex">
+          <!-- logo -->
+          <a href="./index.html" class="logo">
+            <img src="./assets/img/logo.png" alt="logo" />
+          </a>
+          <!-- navigation -->
+          <div class="nav-menu">
+            <nav>
+              <ul class="nav-list">
+                <li><a href="./index.html">main</a></li>
+                <li><a href="#">about company</a></li>
+                <li><a href="#">our projects</a></li>
+                <li><a href="#">privacy policy</a></li>
+              </ul>
+            </nav>
+          </div>
+          <!-- button -->
+          <a href="#" class="header-contact">contact us</a>
+          <button class="mob-menu-btn" type="button">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- HERO Section -->
+      <section class="hero">
+        <img src="./assets/img/hero.jpg" alt="hero logo" />
+        <h1 class="visually-hidden">Messworks</h1>
+      </section>
+
+      <!-- ABOUT Section -->
+      <section class="about">
+        <div class="about-contacts-container">
+          <div class="about-title title-h2">
+            <h2>About company</h2>
+            <p>Messworks</p>
+          </div>
+          <div class="about-wrap">
+            <p>
+              Messworks Ltd, established in 2021 by a team of highly experienced industry veterans, brings together
+              individuals with over 20 years of expertise in casual and midcore game production, game design,
+              technology, and management.
+            </p>
+            <div class="about-content">
+              <h3>Our goal is simple:</h3>
+              <div class="about-image"><img src="./assets/img/rocket.png" alt="rocket" /></div>
+              <p>
+                To create high-quality games that spread joy and entertainment to players worldwide. With a strong focus
+                on initiative, innovation, and attention to detail, we're committed to delivering unforgettable gaming
+                experiences that set new standards in the industry.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS Section -->
+      <section class="projects">
+        <div class="container">
+          <div class="projects-title title-h2">
+            <h2>Our projects</h2>
+            <p>Messworks</p>
+          </div>
+
+          <div class="projects-box">
+            <article class="projects-article">
+              <a href="#">
+                <h3>sherlock & cat watson</h3>
+                <img src="./assets/img/project2.jpg" alt="project" />
+              </a>
+            </article>
+
+            <article class="projects-article">
+              <a href="#">
+                <h3>Matching tale</h3>
+                <img src="./assets/img/project2.jpg" alt="project" />
+              </a>
+            </article>
+
+            <article class="projects-article">
+              <a href="#">
+                <h3>Find & stick</h3>
+                <img src="./assets/img/project2.jpg" alt="project" />
+              </a>
+            </article>
+
+            <article class="projects-article">
+              <a href="#">
+                <h3>ysdeen tale</h3>
+                <img src="./assets/img/project2.jpg" alt="project" />
+              </a>
+            </article>
+
+            <article class="projects-article">
+              <a href="#">
+                <h3>jigsorn master</h3>
+                <img src="./assets/img/project2.jpg" alt="project" />
+              </a>
+            </article>
+
+            <article class="projects-article">
+              <a href="#">
+                <h3>mystery escape</h3>
+                <img src="./assets/img/project2.jpg" alt="project" />
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACTS Section -->
+      <section class="contacts">
+        <div class="about-contacts-container">
+          <div class="contacts-title title-h2">
+            <h2>Our projects</h2>
+            <p>Messworks</p>
+          </div>
+
+          <!-- Contacts form -->
+          <div class="contacts-wrap">
+            <form class="contacts-form">
+              <div class="contacts-form-field">
+                <label for="firstName">First Name:</label>
+                <input
+                  type="text"
+                  id="firstName"
+                  name="firstName"
+                  placeholder="Input your first name in here"
+                  required />
+              </div>
+
+              <div class="contacts-form-field">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Input your last name in here" required />
+              </div>
+
+              <div class="contacts-form-field">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Input your email address in here" required />
+              </div>
+
+              <div class="contacts-form-field">
+                <label for="subject">Email Subject:</label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Input your email subject in here"
+                  required />
+              </div>
+
+              <div class="contacts-form-field">
+                <label for="message">Message:</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Write your messages in here"
+                  required></textarea>
+              </div>
+
+              <div class="contacts-form-policy">
+                <input class="contacts-input-check visually-hidden" id="user-policy" name="user-policy" type="checkbox" value="true" required />
+                <label class="contacts-label-check" for="user-policy">
+                  <span>
+                    <svg class="contacts-form-check-icon" width="10" height="10">
+                      <use href="./assets/img/checkbox.svg#checkbox"></use>
+                    </svg>
+                  </span>
+                  By checking this box and submitting your information, you are granting us permission to email you. You
+                  may unsubscribe at any time.
+                </label>
+              </div>
+
+              <button class="contacts-form-send-btn" type="submit">Send Message</button>
+            </form>
+
+            <!-- Contacts connect -->
+            <div class="contacts-connect">
+              <div class="contacts-connect-person">
+                <div class="contacts-connect-img">
+                  <img src="./assets/img/photo.jpg" alt="photo" />
+                </div>
+                <div class="contacts-connect-name">
+                  <h3>Anna Zadorozhniuk</h3>
+                  <p>CEO</p>
+                </div>
+              </div>
+
+              <div class="contacts-connect-text">
+                <p>
+                  Creative and collaborative professional with significant experience designing, managing, and producing
+                  highly successful casual mobile and social games for platforms including Apple Store, Google Play
+                  Store, Apple Arcade, Netflix, and Steam. Proven ability to lead the vision and manage the details on
+                  projects from concept to launch, working with teams of all sizes around the world.
+                </p>
+              </div>
+
+              <ul class="contacts-connect-list">
+                <li class="contacts-connect-item">
+                  <img src="./assets/img/linkedin.svg" alt="linkedin" />
+                  <a href="#" class="contacts-connect-link"> Anna Zadorozhniuk </a>
+                </li>
+                <li class="contacts-connect-item">
+                  <img src="./assets/img/email.svg" alt="email" />
+                  <a href="mailto:anna@mess-works.com" class="contacts-connect-link"> anna@mess-works.com </a>
+                </li>
+                <li class="contacts-connect-item">
+                  <img src="./assets/img/phone.svg" alt="phone" />
+                  <a href="tel:+17035872235" class="contacts-connect-link"> +1(703) 5872235 </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-flex">
+          <!-- logo -->
+          <a href="./index.html" class="footer-logo">
+            <img src="./assets/img/logo.png" alt="logo" />
+          </a>
+          <!-- navigation -->
+          <nav>
+            <ul class="footer-nav-list">
+              <li class="footer-nav-item"><a href="#">about company</a></li>
+              <li class="footer-nav-item"><a href="#">our projects</a></li>
+              <li class="footer-nav-item"><a href="#">privacy policy</a></li>
+            </ul>
+          </nav>
+          <!-- social -->
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a href="#"><img src="./assets/img/facebook.svg" alt="facebook" /></a>
+            </li>
+            <li class="footer-social-item">
+              <a href="#"><img src="./assets/img/linkedin.svg" alt="linkedin" /></a>
+            </li>
+            <li class="footer-social-item">
+              <a href="#"><img src="./assets/img/google-play.svg" alt="google play" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="rights-reserved">© MESSWORKS company 2024</div>
+    </footer>
+    <script src="./assets/js/mobile-menu.js"></script>
+  </body>
 </html>
