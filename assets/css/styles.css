@@ -971,7 +971,8 @@
 /* MIN-WIDTH 1440px Styles */
 
 @media screen and (min-width: 1440px) {
-  .container {
+  .container,
+  .footer-container {
     max-width: 1440px;
     padding: 0 100px;
   }
@@ -980,11 +981,6 @@
   .contacts-container {
     max-width: 1440px;
     padding: 0 150px;
-  }
-
-  .footer-container {
-    max-width: 1440px;
-    padding: 0 100px;
   }
 
   .title-h2 h2 {
@@ -1195,11 +1191,7 @@
 /* MIN-WIDTH 1920px Styles */
 
 @media screen and (min-width: 1920px) {
-  .container {
-    max-width: 1920px;
-    padding: 0 220px;
-  }
-
+  .container,
   .footer-container {
     max-width: 1920px;
     padding: 0 220px;
