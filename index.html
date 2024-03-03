@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.min.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/common.css" />
-    <link rel="stylesheet" type="text/css" href="./assets/css/index.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
   </head>
   <body>
     <header class="header">
@@ -52,12 +52,12 @@
 
       <!-- ABOUT Section -->
       <section class="about">
-        <div class="about-contacts-container">
+        <div class="about-container">
           <div class="about-title title-h2">
             <h2>About company</h2>
             <p>Messworks</p>
           </div>
-          <div class="about-wrap">
+          <div class="about-text">
             <p>
               Messworks Ltd, established in 2021 by a team of highly experienced industry veterans, brings together
               individuals with over 20 years of expertise in casual and midcore game production, game design,
@@ -132,14 +132,14 @@
 
       <!-- CONTACTS Section -->
       <section class="contacts">
-        <div class="about-contacts-container">
+        <div class="contacts-container">
           <div class="contacts-title title-h2">
-            <h2>Our projects</h2>
+            <h2>Contact us</h2>
             <p>Messworks</p>
           </div>
 
-          <!-- Contacts form -->
           <div class="contacts-wrap">
+            <!-- Contacts form -->
             <form class="contacts-form">
               <div class="contacts-form-field">
                 <label for="firstName">First Name:</label>
@@ -182,7 +182,13 @@
               </div>
 
               <div class="contacts-form-policy">
-                <input class="contacts-input-check visually-hidden" id="user-policy" name="user-policy" type="checkbox" value="true" required />
+                <input
+                  class="contacts-input-check visually-hidden"
+                  id="user-policy"
+                  name="user-policy"
+                  type="checkbox"
+                  value="true"
+                  required />
                 <label class="contacts-label-check" for="user-policy">
                   <span>
                     <svg class="contacts-form-check-icon" width="10" height="10">
