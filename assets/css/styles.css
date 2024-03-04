@@ -55,6 +55,7 @@
   font-weight: 400;
   line-height: normal;
   color: #a666e8;
+  text-transform: uppercase;
 }
 
 /* HEADER Styles */
@@ -238,6 +239,7 @@
   bottom: 0;
   right: 0;
   background-image: linear-gradient(-193deg, rgba(0, 0, 0, 0) 33.78%, #000 93.46%);
+  pointer-events: none;
 }
 
 .projects-article h3 {
@@ -356,6 +358,7 @@
   width: 66px;
   height: 66px;
   border-radius: 50%;
+  overflow: hidden;
 }
 
 .contacts-connect-name {
@@ -1015,11 +1018,18 @@
     font-size: 16px;
   }
 
+  /* HERO Section */
+
+  .hero img {
+    clip-path: polygon(50% 100%, 100% 90%, 100% 0%, 0% 0%, 0% 90%);
+    overflow: hidden;
+  }
+
   /* ABOUT Section */
 
   .about {
     padding-top: 80px;
-    padding-bottom: 90px;
+    padding-bottom: 80px;
   }
 
   .about-content h3 {
@@ -1042,7 +1052,7 @@
   /* PROJECTS Section */
 
   .projects {
-    padding-bottom: 158px;
+    padding-bottom: 80px;
   }
 
   .projects-title {
@@ -1071,7 +1081,7 @@
   /* CONTACTS Section */
 
   .contacts {
-    padding-bottom: 46px;
+    padding-bottom: 90px;
   }
 
   .contacts-title {
@@ -1087,7 +1097,7 @@
     justify-content: flex-start;
     column-gap: 16px;
     row-gap: 32px;
-    min-width: 55%;
+    min-width: 50%;
   }
 
   .contacts-form-field {
@@ -1109,7 +1119,7 @@
 
   .contacts-form-field input::placeholder,
   .contacts-form-field textarea::placeholder {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .contacts-form-policy {
@@ -1242,14 +1252,21 @@
   /* CONTACTS Section */
 
   .contacts-wrap {
-    gap: 140px;
+    gap: 130px;
+  }
+
+  /* Contacts form */
+
+  .contacts-form-field input::placeholder,
+  .contacts-form-field textarea::placeholder {
+    font-size: 16px;
   }
 
   /* Contacts connect */
 
   .contacts-connect-img {
-    width: 140px;
-    height: 140px;
+    width: 141px;
+    height: 141px;
   }
 
   .contacts-connect-name h3 {
