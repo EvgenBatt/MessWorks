@@ -182,6 +182,10 @@
     padding: 0 100px;
   }
 
+  .hero-project-card {
+    padding-top: 48px;
+  }
+
   .project-card {
     padding-top: 90px;
     padding-bottom: 80px;
