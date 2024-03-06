@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.min.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/common.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/project-card.css" />
   </head>
   <body>
     <header class="header">
@@ -45,89 +46,91 @@
     </header>
     <main>
       <!-- HERO Section -->
-      <section class="hero">
+      <section class="hero hero-project-card">
         <img src="./assets/img/hero.jpg" alt="hero logo" />
         <h1 class="visually-hidden">Messworks</h1>
       </section>
 
-      <!-- ABOUT Section -->
-      <section class="about">
-        <div class="about-container">
-          <div class="about-title title-h2">
-            <h2>About company</h2>
-            <p>Messworks</p>
-          </div>
-          <div class="about-text">
-            <p>
-              Messworks Ltd, established in 2021 by a team of highly experienced industry veterans, brings together
-              individuals with over 20 years of expertise in casual and midcore game production, game design,
-              technology, and management.
-            </p>
-            <div class="about-content">
-              <h3>Our goal is simple:</h3>
-              <div class="about-content-wrap">
-                <div class="about-image"><img src="./assets/img/rocket.png" alt="rocket" /></div>
+      <!-- PROJECT CARD Section -->
+
+      <section class="project-card">
+        <div class="project-card-container">
+          <div class="project-card-flex">
+            <div class="project-card-content-wrap">
+              <div class="project-card-title title-h1">
+                <h1>matching tale</h1>
+              </div>
+              <div class="project-card-text">
                 <p>
-                  To create high-quality games that spread joy and entertainment to players worldwide. With a strong
-                  focus on initiative, innovation, and attention to detail, we're committed to delivering unforgettable
-                  gaming experiences that set new standards in the industry.
+                  The Kingdom has fallen under a spell! Help the bewitched inhabitants turn the gloomy castle back into
+                  a wonderful, happy place. Complete challenging, unique and exciting match-3 levels! Overcome
+                  obstacles, create magical power-ups and unlock powerful boosters!
                 </p>
               </div>
+
+              <div class="project-card-content">
+                <div class="project-card-content-container">
+                  <h2 class="project-card-list-title">The Matching Tale features:</h2>
+                  <ul class="project-card-list">
+                    <li class="project-card-item">
+                      <p>Exciting match-3 levels with fun obstacles and unique power-ups!</p>
+                    </li>
+                    <li class="project-card-item">
+                      <p>Fun boosters and powerful combos to help you beat levels</p>
+                    </li>
+                    <li class="project-card-item">
+                      <p>A lot of amazing fairy-tale locations for disenchantment</p>
+                    </li>
+                    <li class="project-card-item">
+                      <p>Dozens of adorable bewitched characters</p>
+                    </li>
+                    <li class="project-card-item">
+                      <p>Teams and Leaderboards to compete with players all over the world</p>
+                    </li>
+                  </ul>
+                  <h3 class="project-card-action">Play now!</h3>
+
+                  <div class="project-card-icon-flex">
+                    <div class="project-card-icon-wrap">
+                      <a href="#">
+                        <img
+                          class="project-card-image-mobile"
+                          src="./assets/img/apple-logo-mob.svg"
+                          alt="apple store" />
+                        <img
+                          class="project-card-image-desktop"
+                          src="./assets/img/apple-logo-desk.svg"
+                          alt="apple store" />
+                      </a>
+                    </div>
+                    <div class="project-card-icon-wrap">
+                      <a href="#">
+                        <img
+                          class="project-card-image-mobile"
+                          src="./assets/img/google-play-logo-mob.svg"
+                          alt="google play" />
+                        <img
+                          class="project-card-image-desktop"
+                          src="./assets/img/google-play-logo-desk.svg"
+                          alt="google play" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </section>
 
-      <!-- PROJECTS Section -->
-      <section class="projects">
-        <div class="container">
-          <div class="projects-title title-h2">
-            <h2>Our projects</h2>
-            <p>Messworks</p>
-          </div>
-
-          <div class="projects-box">
-            <article class="projects-article">
-              <a href="./project-card.html">
-                <h3>sherlock & cat watson</h3>
-                <img src="./assets/img/project2.jpg" alt="project" />
-              </a>
-            </article>
-
-            <article class="projects-article">
-              <a href="#">
-                <h3>Matching tale</h3>
-                <img src="./assets/img/project2.jpg" alt="project" />
-              </a>
-            </article>
-
-            <article class="projects-article">
-              <a href="#">
-                <h3>Find & stick</h3>
-                <img src="./assets/img/project2.jpg" alt="project" />
-              </a>
-            </article>
-
-            <article class="projects-article">
-              <a href="#">
-                <h3>ysdeen tale</h3>
-                <img src="./assets/img/project2.jpg" alt="project" />
-              </a>
-            </article>
-
-            <article class="projects-article">
-              <a href="#">
-                <h3>jigsorn master</h3>
-                <img src="./assets/img/project2.jpg" alt="project" />
-              </a>
-            </article>
-
-            <article class="projects-article">
-              <a href="#">
-                <h3>mystery escape</h3>
-                <img src="./assets/img/project2.jpg" alt="project" />
-              </a>
-            </article>
+            <ul class="project-card-image-list">
+              <li class="project-card-image-item">
+                <img src="./assets/img/project-card-image.jpg" alt="game image" />
+              </li>
+              <li class="project-card-image-item">
+                <img src="./assets/img/project-card-image.jpg" alt="game image" />
+              </li>
+              <li class="project-card-image-item">
+                <img src="./assets/img/project-card-image.jpg" alt="game image" />
+              </li>
+            </ul>
           </div>
         </div>
       </section>
